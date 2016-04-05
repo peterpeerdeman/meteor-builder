@@ -1,5 +1,7 @@
 FROM node:0.10
 
+RUN npm -g install npm@latest-2
+
 VOLUME /code
 
 VOLUME /out
@@ -20,4 +22,3 @@ RUN cd /root && \
     cp $LAUNCHER /usr/bin/meteor
 
 ADD build.sh /
-
