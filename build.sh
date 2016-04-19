@@ -10,9 +10,9 @@ cp -R /code /swp/
 
 cd /swp/code
 
-echo "Building the meteor app, this might take a while.. (and isn't chatty)"
+echo "Building the meteor app, this might take a while.."
 
-meteor build /swp/build --directory
+meteor build --verbose /swp/build --directory
 
 cd /swp/build/bundle/programs/server
 
@@ -27,4 +27,3 @@ echo "Packaging up the app.."
 tar cfz /out/meteor-app.tgz *
 
 chmod a+rwx /out/meteor-app.tgz
-
