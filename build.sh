@@ -10,13 +10,17 @@ cp -R /code /swp/
 
 cd /swp/code
 
+echo "Installing meteor npm dependencies (since meteor 1.3.2.4)"
+
+meteor npm install --production
+
 echo "Building the meteor app, this might take a while.."
 
 meteor build --verbose /swp/build --directory
 
 cd /swp/build/bundle/programs/server
 
-echo "Running npm install.."
+echo "Running meteor npm install.. (for npm-packages before meteor 1.3.2.4)"
 
 npm install
 
