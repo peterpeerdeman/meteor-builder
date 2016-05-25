@@ -10,7 +10,7 @@ VOLUME /swp
 
 ENTRYPOINT /build.sh
 
-ENV METEOR_VERSION 1.3.1
+ENV METEOR_VERSION 1.3.2.4
 
 ENV METEOR_DOWNLOAD https://d3sqy0vbqsdhku.cloudfront.net/packages-bootstrap/${METEOR_VERSION}/meteor-bootstrap-os.linux.x86_64.tar.gz
 
